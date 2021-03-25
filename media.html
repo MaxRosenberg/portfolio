@@ -10,9 +10,10 @@
 </head>
 
 <body>
+  <a class = "skip" href="#main">Skip to Main Content </a>
   <header>
     <div class="title">
-      <p>Personal Portfolio</p>
+      <h1>Personal Portfolio</h1>
     </div>
     <nav>
         <a href = "index.html">About Me</a>
@@ -21,10 +22,20 @@
         <a class="current" href = "media.html">Favorite Media</a>   
     </nav>
   </header>
+
+  <main id="main">
+  <hr>
+  <div>
+    <p id="media_overview">This page contains 3 sections: <a class="mediaLink" href=#music_head>Favorite Musical Artists</a> and my favorite song by each artist, 
+      <a class="mediaLink" href=#books_head>Favorite Books</a> and my favorite quote from each book, and 
+      <a class="mediaLink" href=#movies_head>Favorite Movies</a></p>
+  </div>
+  <hr>
+  </main>
     
   <div id="all_media">
+      <h1 id="music_head">Favorite Musical Artists</h1>
       <div id="music">
-          <h1>Favorite Musical Artists</h1>
           <figure>
             <img src="media_images/kanye.jpg" alt="Seven Psychopaths Movie Poster" />
             <figcaption> Kanye West <br> Favorite Song: Homecoming</figcaption>
@@ -52,15 +63,15 @@
 
       </div>
       
+      <h1 id="books_head">Favorite Books</h1> 
       <div id="books">    
-        <h1>Favorite Books</h1> 
           <figure>
-            <img src="media_images/CloudAtlas.jpg" alt="" />
+            <img src="media_images/CloudAtlas.jpg" alt="Cloud Atlas Book Cover" />
             <figcaption>Book: Cloud Atlas <br> Author: David Mitchell <br> Favorite Quote: “Oh, bein’ young ain’t easy ’cos ev’rythin’ you’re puzzlin’n’anxin’ you’re 
             puzzlin’n’anxin’ it for the first time.”</figcaption>
           </figure>
           <figure>
-            <img src="media_images/SlaughterhouseFive.jpg" alt="" />
+            <img src="media_images/SlaughterhouseFive.jpg" alt="Slaughterhouse Five Book Cover" />
             <figcaption>Book: Slaughterhouse Five <br> Author: Kurt Vonnegut <br> Favorite Quote: “There is no beginning, no middle, no end, no suspense, no moral, no causes, 
             no effects. What we love in our books are the depths of many marvelous moments seen all at one time.”</figcaption>
           </figure>
@@ -73,20 +84,20 @@
             senseless nightmare road”</figcaption>
           </figure>
           <figure>
-          <img src="media_images/RideLifetime.jpg" alt="" /> 
+          <img src="media_images/RideLifetime.jpg" alt="Ride of a Lifetime Book Cover" /> 
           <figcaption> The Ride of a Lifetime <br> Author: Bob Iger <br> Favorite Quote: “If you start petty, you seem petty. And if the 
             big picture is a mess, then the small things don’t matter anyway, and you shouldn’t spend 
             time focusing on them.”</figcaption>
           </figure>
           <figure>
-            <img src="media_images/CatsCradle.jpg" alt="" />
+            <img src="media_images/CatsCradle.jpg" alt="Cat's Cradle Book Cover" />
             <figcaption>Book: Cat's Cradle <br> Author: Kurt Vonnegut <br> Favorite Quote: “Busy, busy, busy, is what we Bokononists whisper whenever we 
             think of how complicated and unpredictable the machinery of life really is.”</figcaption>
           </figure>
       </div>
 
+      <h1 id="movies_head">Favorite Movies</h1>
       <div id="movies">
-          <h1>Favorite Movies</h1>
           <figure>
             <img src="media_images/7Psychos.jpg" alt="Seven Psychopaths Movie Poster" />
             <figcaption>Seven Psychopaths</figcaption>
@@ -110,10 +121,12 @@
       </div>
   </div>
 
+
+  <hr>
   <footer>
     <a href="https://instagram.com/max___rosenberg?igshid=sgma1hr4mx5t"><img src="insta.jpg" alt="Instagram Logo"/></a>
-    <a href="https://www.linkedin.com/in/max-c-rosenberg/"><img src="linkedIn.jpeg" alt="LinkedIn Logo"/></a>
-    <a href= "https://github.com/MaxRosenberg"><img src="github.png" alt="Github Logo"/></a>
+    <a href="https://www.linkedin.com/in/max-c-rosenberg/"><img src="linked.jpg" alt="LinkedIn Logo"/></a>
+    <a href= "https://github.com/MaxRosenberg"><img class="git" src="github.jpg" alt="Github Logo"/></a>
   </footer>
 </body>
 </html>

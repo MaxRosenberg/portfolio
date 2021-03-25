@@ -1,6 +1,7 @@
 
 body{
-    background-color: #4d9ba526;
+    /* background-color: #4d9ba526; */
+    background-color: #e1eef8;
 }
 
 body p{
@@ -20,8 +21,10 @@ a.skip{
 }  
 
 a.skip:focus{
-    top:40px;
+    top:60px;
     color: black;
+    left: 60px;
+    right: 60px;
     text-decoration-style: solid;
     border-style: dashed;
     font-family: "Comic Sans MS";
@@ -38,7 +41,7 @@ a.skip:focus{
     padding: 1.5%;
 }
 
-.title>p{
+.title>h1{
     text-align: center;
     font-family: "Andale Mono", monospace;
     font-size: 30px;
@@ -56,36 +59,32 @@ nav{
 
 .current{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 33px;
 }
 
 
 nav>a{
     text-decoration: none;
     font-family: 'Marker Felt', 'courier'; 
-    /* font-family: "Andale Mono", monospace; */
-    font-size: 20px;
+    font-size: 24px;
 }
 
 nav>a:link{
-    color: black;
+    /* color: rgb(224, 39, 6); */
+    color: rgb(226, 45, 32);
 }
 
 a:focus{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 nav>a:visited{
-    color: rgb(212, 135, 45);
+    /* color: rgb(224, 39, 6); */
+    color: rgb(226, 45, 32);
 } 
 
 
-.intro{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
+
 
 h1{
     font-size: 30px;
@@ -95,8 +94,127 @@ h2{
     font-size: 25px;
 }
 
+/* ABOUT ME SECTION */
+#main_index{
+    background-image: url(../about_imgs/under_sculpture.JPG);
+    background-attachment: fixed;
+    padding-bottom: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color:rgb(80, 78, 78);
+    border-style: solid;
+    border-width: .05em;
+}
 
-/* projects.html section */
+#main_index p{
+    color:black;
+    background-color:white;
+    padding: 2%;
+    margin-top: 0%;
+    font-family: monospace;
+}
+
+.intro{
+    padding-top: 25px;
+}
+
+.intro p{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.maincontainer{
+   position: relative;
+   width: 100%;
+   height: 350px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+
+.thecard:focus{
+    transform: rotateY(180deg);
+}
+
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(../about_imgs/surfing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+    background-image: url(../about_imgs/surfing2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theback p{
+    padding: 10%;
+    margin: auto auto;
+    color: white;
+    font-size: 35px;
+}
+
+#surf{
+    margin-bottom: 30px;
+}
+
+#festival{
+    margin-top: -30px;
+}
+
+#festival_front{
+    background-image: url(../about_imgs/outside_lands.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#festival_back{
+    background-image: url(../about_imgs/osl2.jpg);
+    background-size: contain;
+}
+
+
+
+/* EXPERIENCE.HTML SECTION */
+li {
+    list-style: square;
+    padding: 10px;
+}
+
+.ordermark{
+    border-radius: 20px;
+}
+
+
+
+
+/* PROJECTS.HTML SECTION */
 .project_sum{
     font-family: "rockwell";
 }
@@ -120,38 +238,68 @@ iframe{
 }
 
 
-
+/* FOOTER STYLE */
 footer{
     display: flex;
     justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-footer>a, footer>img{
+footer>a, footer img{
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 12px;
+}
+
+.git{
+    border-radius: 40px;
 }
 
 
-/* media.html section */
-#all_media{
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 15;
-}
 
-#all_media h1{
-    font-size: 30px;
+/* MEDIA.HMTL SECTION */
+#media_overview{
+    font-size: 20px;
     text-align: center;
 }
 
+.mediaLink{
+    color: rgb(80, 78, 78);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.mediaLink:hover{
+    font-size: 28px;
+}
+
+#music_head, #books_head, #movies_head{
+    margin-bottom: -15px;
+}
+#music,#books,#movies {
+    margin-top: 0px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#all_media h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 #all_media figure{
-    margin: 20px;
+    align-self: center;
+    justify-self: start;
+    grid-column: start 2 / span 1;
+    display: inline;
 }
 
 #all_media figcaption, #all_media img{
     text-align: center;
+    
 }
 
 #music>figure>img{
@@ -161,7 +309,11 @@ footer>a, footer>img{
 
 #music{
     grid-column: 2 / span 1;
-    
+}
+
+#music figcaption{
+    font-family: "Candara", "arial";
+    font-size: 20px;
 }
 
 #books>figure>img{
@@ -174,14 +326,23 @@ footer>a, footer>img{
     word-wrap: break-word;
 }
 
-#movies{
+/* #movies{
     grid-column: 2 / span 1;
+} */
+
+#books figcaption{
+    font-family: "rockwell", "arial";
 }
 
 
 #movies>figure>img{
     border: 5px solid black;
     margin: auto;
+}
+
+#movies figcaption{
+    font-family: "Copperplate", "Arial";
+    font-size: 23px;
 }
 
 
@@ -228,6 +389,7 @@ img:active{
 @media screen and (min-width: 1000px){
     iframe{
         display: block;
+        
     }
 
     .title{
@@ -235,6 +397,10 @@ img:active{
     }
 
     .project>a{
+        display: none;
+    }
+
+    .project p{
         display: none;
     }
 }

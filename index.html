@@ -11,10 +11,10 @@
 
   
 <body>
-  <a class = "skip" href="#main">Skip to Main Content </a>
+  <a class = "skip" href="#main_index">Skip to Main Content </a>
   <header>
     <div class="title">
-      <p>Personal Portfolio</p>
+      <h1>Personal Portfolio</h1>
     </div>
     <nav>
         <a class="current" href = "index.html">About Me</a>
@@ -24,34 +24,68 @@
     </nav>
   </header>
 
-<main id="main">
-  <div class="intro">
-    <img src="about_imgs/under_sculpture.JPG" alt="Me Under Sitting Sculpture" />
-    <p>Thanks for coming to my site! My name is Max Rosenberg, and I'm a junior at the University of Michigan
-      pursuing a major in Information and a minor in Economics. I'm from Manhattan Beach, California where  
-      some of my favorite hobbies are surfing and running. On this site you can find explanations of some of 
-      my work experiences, and my most impactful academic projects. Additionally,  I also love reading books, 
-      listening to music, and watching movies, so you'll find my favorites in all three of those categories.</p>
-  </div>
+<main id="main_index">
+  <!-- <div class="intro"> -->
+    <!-- <img src="about_imgs/under_sculpture.JPG" alt="Me Under Sitting Sculpture" /> -->
+    <p>Thanks for visiting my site. My name is Max Rosenberg, and I'm a junior at the University of 
+      Michigan pursuing a major in Information and a minor in Economics. I'm from Manhattan Beach, 
+      California where some of my favorite hobbies are surfing and running. On this site you can find 
+      explanations of some of my work experiences, and my most impactful academic projects. Additionally, 
+      I love reading books, listening to music, and watching movies, so you'll find my favorites from 
+      all three categories.</p>
+
+  <!-- </div> -->
 </main>
+<br>
+<hr>
+
 
 
   <div class="intro">
-    <img src="about_imgs/surfing.jpg" alt="Me surfing" />
-    <p>Me surfing at Salt Creek beach in Dana Point, California</p>
-    <img src="about_imgs/running1.jpg" alt="Me at Mud Run with team" />
-    <p>A group of friends, parents, and myself after running in the Camp Pendleton 
+    <div class="maincontainer">
+        
+      <div tabindex="0" class="thecard">
+    
+        <div class="thefront"></div>
+    
+        <div class="theback"><p></p></div>
+        </div>
+    </div>
+    <div id="surf">
+      <p>Me surfing at Salt Creek beach in Dana Point, California (press image to flip)</p>
+    </div>
+
+
+
+    <div>
+      <img src="about_imgs/running1.jpg" alt="Me at Mud Run with team" />
+      <p>A group of friends, parents, and myself after running in the Camp Pendleton 
       Marine Corps Mud Run in 2019 </p>
-    <img src="about_imgs/outside_lands.jpg" alt="Me and friends under Outsidelands Sign" />   
-    <p>My friends and I at Outsidelands Music Festival in San Francisco in 2019</p>   
+    </div>
+
+
+
+    <div class="maincontainer">
+        
+      <div tabindex="0" class="thecard">
+    
+        <div id="festival_front" class="thefront"></div>
+    
+        <div id="festival_back" class="theback"><p></p></div>
+        </div>
+    </div>
+
+    <div id="festival">  
+      <p>My friends and I at Outsidelands Music Festival in San Francisco in 2019 (press image to flip)</p>   
+    </div>
   </div>
 
 
-
+    <hr>
     <footer>
       <a href="https://instagram.com/max___rosenberg?igshid=sgma1hr4mx5t"><img src="insta.jpg" alt="Instagram Logo"/></a>
-      <a href="https://www.linkedin.com/in/max-c-rosenberg/"><img src="linkedIn.jpeg" alt="LinkedIn Logo"/></a>
-      <a href= "https://github.com/MaxRosenberg"><img src="github.png" alt="Github Logo"/></a>
+      <a href="https://www.linkedin.com/in/max-c-rosenberg/"><img src="linked.jpg" alt="LinkedIn Logo"/></a>
+      <a href= "https://github.com/MaxRosenberg"><img class="git" src="github.jpg" alt="Github Logo"/></a>
     </footer>
 </body>
 </html>
