@@ -10,14 +10,21 @@ body p{
 
 a.skip{
     background: white;
-    left: 0;
+    /* left: 0; */
     padding: 6px;
     position: absolute;
-    top: -40px;
+    top: -41px;
     rotate: 0deg;
-    -webkit-transition: top 1s ease-out;
+    -webkit-transition: top 1s ease-in-out;
     transition: top 1s ease-out;
     z-index: 1;
+    color: black;
+    text-decoration-style: solid;
+    border-style: dashed;
+    font-family: "Comic Sans MS";
+    text-decoration: none;
+    left: 60px;
+    right: 60px;
 }  
 
 a.skip:focus{
@@ -33,19 +40,29 @@ a.skip:focus{
 
 
 .title{
-    background-color: rgb(137, 148, 161);
+    /* background-color: rgb(223, 117, 68); */
+    background-color: #fff2cc;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    padding: 1.5%;
+    box-shadow: 0px 3px 6px rgb(8, 8, 8);
 }
 
 .title>h1{
     text-align: center;
-    font-family: "Andale Mono", monospace;
-    font-size: 30px;
+    font-family: lobster, monospace;
+    font-size: 40px;
+    color: #0b5394;
     
+}
+
+.title p{
+    text-align: center;
+    font-family: lobster, monospace;
+    font-size: 24px;
+    color: #0b5394;
+    margin-top: -35px;
 }
 
 nav{
@@ -54,7 +71,7 @@ nav{
     flex-direction: column;
     margin-bottom: 10px;
     margin-top: 120px;
-    
+    padding-top: 15px;
 }
 
 .current{
@@ -78,12 +95,20 @@ a:focus{
     font-size: 24px;
 }
 
+nav a:focus{
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.current:focus{
+    text-decoration: underline;
+    font-size: 33px;
+}
+
 nav>a:visited{
     /* color: rgb(224, 39, 6); */
     color: rgb(226, 45, 32);
 } 
-
-
 
 
 h1{
@@ -105,6 +130,9 @@ h2{
     /* border-color:rgb(80, 78, 78); */
     /* border-style: solid; */
     border-width: .05em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
 }
 
 #main_index p{
@@ -114,6 +142,8 @@ h2{
     margin-top: 0%;
     font-family: monospace;
 }
+
+
 
 .intro{
     padding-top: 25px;
@@ -188,6 +218,10 @@ h2{
     margin-top: -30px;
 }
 
+#festival p{
+    margin-top: 40px;
+}
+
 #festival_front{
     background-image: url(../about_imgs/outside_lands.jpg);
     background-position: center;
@@ -196,7 +230,8 @@ h2{
 
 #festival_back{
     background-image: url(../about_imgs/osl2.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -207,10 +242,13 @@ li {
     padding: 10px;
 }
 
-.ordermark{
+#ordermark{
     border-radius: 20px;
 }
 
+.experience img{
+    box-shadow: 1px 5px 4px grey;
+}
 
 
 
@@ -233,9 +271,6 @@ iframe{
     padding: 0px;
 }
 
-.project>img{
-    width: 150%;
-}
 
 
 /* FOOTER STYLE */
@@ -281,7 +316,7 @@ footer>a, footer img{
     margin-top: 0px;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
 }
 
 #all_media h1{
@@ -293,18 +328,27 @@ footer>a, footer img{
 #all_media figure{
     align-self: center;
     justify-self: start;
-    grid-column: start 2 / span 1;
+    grid-column: start 2/ span 1;
+    /* grid-row: span 1; */
     display: inline;
 }
 
-#all_media figcaption, #all_media img{
+#all_media figcaption{
     text-align: center;
+
     
+}
+
+#all_media img{
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    /* margin: 0 100px; */
 }
 
 #music>figure>img{
     border: 5px solid green;
-    /* margin: auto; */
+    margin: auto;
 }
 
 #music{
@@ -332,6 +376,8 @@ footer>a, footer img{
 
 #books figcaption{
     font-family: "rockwell", "arial";
+    text-align: center;
+    max-width: 300px;
 }
 
 
@@ -343,6 +389,7 @@ footer>a, footer img{
 #movies figcaption{
     font-family: "Copperplate", "Arial";
     font-size: 23px;
+    text-align: center;
 }
 
 
@@ -374,22 +421,216 @@ img:active{
     transform: rotate(0deg);
 }
 
+/* form.html style  */
+/*   */
+/*   */
+form {
+    border: 2px solid black;
+    background-image: url(../form_content/feedback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    background-position: center;
+    
+  }
 
-@media all and (prefers-reduced-motion){
-    img{
-        animation: none;
+  legend{ 
+    font-size: 175%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.7);
+  }
+  
+  label{
+    display: inline-block;
+    margin-right:10px;
+    max-width:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    opacity: 0.8;
+  }
+  
+  textarea{
+      width: 75%;
+  } 
+  
+  input[type=checkbox]{
+  } */
+  
+  input[type=submit] {
+    background-color: #fff2cc;
+    color: #0b5394;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.1;
+  }
+
+@media screen and (min-width: 767px){
+    /* whole site style */
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+        /* padding-top: 1%; */
+        padding-bottom: 1%;
     }
 
-    img:hover{
-        filter: grayscale(0);
+    a.skip:focus{
+        text-align: center;
+        left: 35%;
+        right: 35%;
     }
+
+    /* about me style */
+
+    #festival_back{
+        height: 450px;
+        width: 100%;
+    }
+
+    #surf_container{
+        height: 500px;
+        width: 600px;
+        margin-right: 10px;
+    }
+
+    #surf p{
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    #festival_container{
+        height: 500px;
+        width: 600px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    #festival p{
+        margin-top: 20px;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    #main_index{
+        grid-template-columns: 2;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #main_index>img{
+        width:500px;
+        height:auto;
+        grid-column: start 1 / span 1;  
+    }
+
+    #main_index p{
+        grid-column: start 2 / span 1;
+        margin-bottom: 0;
+        font-size: 150%;
+    }
+
+    .running_div{
+        margin: 0 15%;
+        width: 600px;
+        height: 500px;
+        margin-left: 10px;
+    }
+    
+
+
+
+    /* experience.html style */
+    .experience img{
+        /* height: 330px;
+        width: 480px; */
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px grey;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+    #ordermark{
+        border-radius: 25px;
+    }
+
+    .experience ul{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experience p, .experience h1{
+        text-align: center;
+    }
+
+    .xp_row{
+        display: flex;
+    }
+
+    .experience{
+        flex: 50%;
+        padding: 20px;
+
+    }
+    /* #main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } */
+    
+
+
+    /* favorite media style */
+    #music,#books,#movies {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #all_media figure{
+        align-self: center;
+        justify-self: start;
+        grid-column: span 1;
+        display: inline;
+        max-height: 100%;
+        
+    }
+
+    #all_media figcaption{
+        padding-top: 2%;
+        overflow: scroll;
+        max-height: 175px;
+        max-width: 100%;
+    }
+
+    #all_media img{
+        max-width: 100%;
+    }
+
+    
 }
 
-
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1025px){
     iframe{
         display: block;
-        
+        margin: 0 auto;
     }
 
     .title{
