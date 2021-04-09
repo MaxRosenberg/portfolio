@@ -590,13 +590,6 @@ form {
         padding: 20px;
 
     }
-    /* #main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    } */
-    
-
 
     /* favorite media style */
     #music,#books,#movies {
@@ -627,7 +620,7 @@ form {
     
 }
 
-@media screen and (min-width: 1367px){
+@media screen and (min-width: 1150px){
     iframe{
         display: block;
         margin: 0 auto;
