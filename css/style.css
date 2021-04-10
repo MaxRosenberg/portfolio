@@ -675,6 +675,19 @@ form {
     .experience img:hover{
         box-shadow: 0px 0px 0px grey;
     }
+
+    #main_index p{
+        background-attachment: scroll;
+    }
+
+    .thecard:hover{
+        transform: none;
+    }
+    
+    .thecard:focus{
+        transform: none;
+    }
+    
 }
 
 
