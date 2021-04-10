@@ -253,8 +253,24 @@ li {
 
 
 /* PROJECTS.HTML SECTION */
-.project_sum{
+.project_sum p{
     font-family: "rockwell";
+}
+
+@keyframes text_spin{
+    from{
+      transform: rotate(20deg);
+      color: #e1eef8;
+    }
+    to{
+      transform: rotate(0deg);
+    }
+  }
+
+
+.project_sum{
+    animation: text_spin;
+    animation-duration: 5s;
 }
 
 iframe{
@@ -389,26 +405,6 @@ footer>a, footer img{
     text-align: center;
 }
 
-
-
-@keyframes slidein{
-    from{
-        left: -1000px;
-    }
-    to{
-        left: 0;
-        top: 0;
-    }
-
-}
-
-/* img{
-    width: 80%;
-    /* filter: grayscale(.75); */
-    /* animation: slidein;
-    animation-duration: 4s;
-} */
-
 img:hover{
     filter: grayscale(0);
 
@@ -534,7 +530,7 @@ form {
 
     #main_index>img{
         width:500px;
-        height:auto;
+        height: auto;
         grid-column: 1 / span 1;  
     }
 
@@ -621,14 +617,40 @@ form {
 }
 
 @media screen and (min-width: 1150px){
-    iframe{
-        display: block;
-        margin: 0 auto;
-    }
-
+    
+    /* INDEX.HTML */
     .title{
         padding: 0%;
     }
+
+    /* #main_index img{
+        display: none;
+    }*/
+
+    #main_index p{
+        background-image: url(../about_imgs/pens_paper.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+
+    /* EXPERIENCE.HTML */
+    .experience img{
+        box-shadow: 0px 0px 0px grey;
+    }
+
+    .experience img:hover{
+        box-shadow: 10px 10px 10px grey;
+        height: auto;
+        width: 100%;
+
+    }
+
+
+    /* PROJECTS.HTML */
 
     .project>a{
         display: none;
@@ -637,17 +659,26 @@ form {
     .project p{
         display: none;
     }
+
+    iframe{
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 @media all and (prefers-reduced-motion){
-    img{
-        animation: none;
+    .project_sum{
+    animation: none;
     }
 
-    img:hover{
-        filter: grayscale(0);
+    .experience img:hover{
+        box-shadow: 0px 0px 0px grey;
     }
 }
+
+
+
 
 
 
