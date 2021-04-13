@@ -687,6 +687,11 @@ form {
     .thecard:focus{
         transform: none;
     }
+
+    a.skip{
+        -webkit-transition: none;
+        transition: none;
+    }
     
 }
 
